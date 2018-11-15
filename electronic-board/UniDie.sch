@@ -2143,19 +2143,10 @@ Character LED Display Module Red 7-Segment 1 Character
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R1" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R2" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R3" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R4" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R5" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R6" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R7" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R8" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R9" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R10" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R11" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R12" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
-<part name="R13" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R15" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R16" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="R17" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
@@ -2186,19 +2177,10 @@ Character LED Display Module Red 7-Segment 1 Character
 <instance part="SUPPLY4" gate="G$1" x="175.26" y="40.64"/>
 <instance part="SUPPLY5" gate="G$1" x="78.74" y="40.64"/>
 <instance part="GND5" gate="1" x="190.5" y="5.08"/>
-<instance part="R1" gate="G$1" x="22.86" y="33.02"/>
-<instance part="R2" gate="G$1" x="22.86" y="25.4"/>
-<instance part="R3" gate="G$1" x="22.86" y="45.72"/>
-<instance part="R4" gate="G$1" x="22.86" y="38.1"/>
 <instance part="R5" gate="G$1" x="22.86" y="2.54"/>
-<instance part="R6" gate="G$1" x="22.86" y="-5.08"/>
 <instance part="R7" gate="G$1" x="22.86" y="15.24"/>
 <instance part="R8" gate="G$1" x="22.86" y="7.62"/>
-<instance part="R9" gate="G$1" x="63.5" y="45.72"/>
-<instance part="R10" gate="G$1" x="63.5" y="33.02"/>
-<instance part="R11" gate="G$1" x="63.5" y="38.1"/>
 <instance part="R12" gate="G$1" x="63.5" y="7.62"/>
-<instance part="R13" gate="G$1" x="63.5" y="25.4"/>
 <instance part="R15" gate="G$1" x="63.5" y="15.24"/>
 <instance part="R16" gate="G$1" x="63.5" y="2.54"/>
 <instance part="R17" gate="G$1" x="63.5" y="-5.08"/>
@@ -2394,70 +2376,6 @@ Character LED Display Module Red 7-Segment 1 Character
 <label x="175.26" y="11.938" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="45.72" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="7-SEG-LED1" gate="G$1" pin="1-E"/>
-<wire x1="30.48" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="2-D"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="38.1" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="4-C"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="5-DP"/>
-<wire x1="33.02" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="30.48" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="10-G"/>
-<wire x1="53.34" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="40.64" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="9-F"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="38.1" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="7-A"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="7-SEG-LED1" gate="G$1" pin="6-B"/>
-<wire x1="53.34" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="25.4" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="7-SEG-LED2" gate="G$1" pin="1-E"/>
@@ -2479,107 +2397,6 @@ Character LED Display Module Red 7-Segment 1 Character
 <pinref part="7-SEG-LED2" gate="G$1" pin="4-C"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="7-SEG-LED2" gate="G$1" pin="5-DP"/>
-<wire x1="33.02" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="-2.54" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-5.08" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TE" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<label x="15.24" y="48.26" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="TD" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
-<label x="15.24" y="40.64" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="TC" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<label x="15.24" y="35.56" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="TDP" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="25.4" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
-<label x="15.24" y="27.94" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="TG" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
-<label x="71.12" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TF" class="0">
-<segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
-<label x="71.12" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TA" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<label x="71.12" y="33.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TB" class="0">
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<label x="71.12" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UE" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="15.24" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
-<label x="15.24" y="17.78" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="UD" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="7.62" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
-<label x="15.24" y="10.16" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="UC" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="2.54" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
-<label x="15.24" y="5.08" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="UDP" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="-5.08" x2="15.24" y2="-5.08" width="0.1524" layer="91"/>
-<label x="15.24" y="-2.54" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="UG" class="0">
-<segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<label x="71.12" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -2612,27 +2429,6 @@ Character LED Display Module Red 7-Segment 1 Character
 <wire x1="55.88" y1="0" x2="55.88" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="-5.08" x2="58.42" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="UF" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
-<label x="71.12" y="7.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UA" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="2.54" x2="71.12" y2="2.54" width="0.1524" layer="91"/>
-<label x="71.12" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UB" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="-5.08" x2="71.12" y2="-5.08" width="0.1524" layer="91"/>
-<label x="71.12" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
