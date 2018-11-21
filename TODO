@@ -1,7 +1,6 @@
 To do:
 - End CAD
-- End board schematic
-- Make board layout according CAD drawing
-- Create the project folder structure
+- Adapt board layout according CAD drawing
+- "Professionalize" eagle files
 - Make code
-- Implement SevenSeg library to both code and hardware
+- Check if SevenSeg library is compatible with non-external clock setting
