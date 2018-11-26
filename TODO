@@ -1,6 +1,6 @@
 To do:
-- End CAD
-- Adapt board layout according CAD drawing
-- "Professionalize" eagle files
+- Draw trimmer as eagle component
+- Measure battery holder, adapt it to CAD and export for EAGLE board layout
+- Punch holes on board layout
 - Make code
 - Check if SevenSeg library is compatible with non-external clock setting
