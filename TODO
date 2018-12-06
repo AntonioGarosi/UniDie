@@ -1,5 +1,6 @@
 To do:
-- Draw trimmer as eagle component
+- Improve CAD
+- Draw board layout
 - Provide an on/off solution
 - Make code
 - Check if SevenSeg library is compatible with non-external clock setting
