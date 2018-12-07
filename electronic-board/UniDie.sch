@@ -3416,6 +3416,7 @@ Character LED Display Module Red 7-Segment 1 Character
 <part name="R4" library="fab" deviceset="RES-US" device="1206FAB" value="120ohm"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_01" device="PTH_NO_SILK_YES_STOP"/>
 <part name="BATTERY" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
+<part name="BREAKER" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -3432,7 +3433,7 @@ Character LED Display Module Red 7-Segment 1 Character
 <instance part="TRIMMER" gate="J$1" x="231.14" y="45.72" rot="R180"/>
 <instance part="GND1" gate="1" x="238.76" y="60.96"/>
 <instance part="GND2" gate="1" x="220.98" y="38.1"/>
-<instance part="GND3" gate="1" x="68.58" y="58.42"/>
+<instance part="GND3" gate="1" x="68.58" y="55.88"/>
 <instance part="GND4" gate="1" x="96.52" y="50.8"/>
 <instance part="7-SEG-LED1" gate="G$1" x="43.18" y="35.56" rot="R270"/>
 <instance part="7-SEG-LED2" gate="G$1" x="43.18" y="5.08" rot="R270"/>
@@ -3456,6 +3457,7 @@ Character LED Display Module Red 7-Segment 1 Character
 <instance part="R4" gate="G$1" x="172.72" y="40.64" rot="R90"/>
 <instance part="J3" gate="G$1" x="218.44" y="17.78" rot="R90"/>
 <instance part="BATTERY" gate="G$1" x="27.94" y="68.58"/>
+<instance part="BREAKER" gate="G$1" x="27.94" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -3472,21 +3474,22 @@ Character LED Display Module Red 7-Segment 1 Character
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="C1" gate="&gt;NAME" pin="1"/>
-<wire x1="43.18" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="63.5" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND"/>
-<wire x1="55.88" y1="66.04" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<junction x="43.18" y="63.5"/>
 <pinref part="C2" gate="&gt;NAME" pin="2"/>
-<wire x1="55.88" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
-<junction x="55.88" y="63.5"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="68.58" y1="63.5" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
-<junction x="68.58" y="63.5"/>
-<pinref part="BATTERY" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<wire x1="68.58" y1="60.96" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="66.04" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="BREAKER" gate="G$1" pin="1"/>
+<pinref part="C1" gate="&gt;NAME" pin="1"/>
+<wire x1="43.18" y1="63.5" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="60.96" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
+<junction x="43.18" y="60.96"/>
+<wire x1="55.88" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
+<junction x="55.88" y="60.96"/>
+<junction x="68.58" y="60.96"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -3892,6 +3895,15 @@ Character LED Display Module Red 7-Segment 1 Character
 <wire x1="147.32" y1="15.24" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="15.24" x2="157.48" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="BREAKER" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="58.42" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="BATTERY" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
